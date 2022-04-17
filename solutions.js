@@ -23,6 +23,9 @@ function nameShuffler(str){
     }
 
 // 4-16-22-solutions
+
+
+// Removes numbers from string input
     function stringClean(s){
       let arr = s.split('')
       for(let i = 0; i < arr.length; i++){
@@ -33,3 +36,24 @@ function nameShuffler(str){
       }
       return arr.join('')
     }
+
+    // interesting question i suppose that returns if the person's name begins with r
+    function areYouPlayingBanjo(name) {
+  
+      return name[0].toLowerCase() === 'r' ? `${name} plays banjo`:`${name} does not play banjo`
+    }
+
+
+// returns if input is even or odd
+    function even_or_odd(number) {
+      return number % 2 === 0 ? 'Even' : 'Odd'
+    }
+
+    
+
+    // Sums Numbers in an array
+function sum (numbers) {
+  "use strict";
+  return numbers.reduce((a,b)=>a+b,0)
+  
+};
