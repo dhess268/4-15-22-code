@@ -21,3 +21,15 @@ function nameShuffler(str){
     //     arguments[0] = tempArr
         arguments[0].reverse()
     }
+
+// 4-16-22-solutions
+    function stringClean(s){
+      let arr = s.split('')
+      for(let i = 0; i < arr.length; i++){
+        if(!isNaN(arr[i]) && arr[i] !== ' '){
+          let removed = arr.splice(i, 1)
+          i -= 1
+        }
+      }
+      return arr.join('')
+    }
